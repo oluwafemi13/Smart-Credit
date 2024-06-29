@@ -8,16 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.18" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <Compile Remove="BusinessLogic\**" />
+    <Compile Remove="Data\**" />
+    <Compile Remove="Entities\**" />
+    <Content Remove="BusinessLogic\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="Entities\**" />
+    <EmbeddedResource Remove="BusinessLogic\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <None Remove="BusinessLogic\**" />
+    <None Remove="Data\**" />
+    <None Remove="Entities\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="BusinessLogic\" />
-    <Folder Include="Data\" />
-    <Folder Include="Entities\" />
-    <Folder Include="BusinessLogic\" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.18" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
 </Project>
