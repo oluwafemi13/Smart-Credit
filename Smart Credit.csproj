@@ -9,23 +9,21 @@
 
   <ItemGroup>
     <Compile Remove="BusinessLogic\**" />
-    <Compile Remove="Data\**" />
     <Compile Remove="Entities\**" />
+    <Compile Remove="Repository\**" />
     <Content Remove="BusinessLogic\**" />
-    <Content Remove="Data\**" />
     <Content Remove="Entities\**" />
+    <Content Remove="Repository\**" />
     <EmbeddedResource Remove="BusinessLogic\**" />
-    <EmbeddedResource Remove="Data\**" />
     <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Repository\**" />
     <None Remove="BusinessLogic\**" />
-    <None Remove="Data\**" />
     <None Remove="Entities\**" />
+    <None Remove="Repository\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="BusinessLogic\" />
-    <Folder Include="Repository\" />
   </ItemGroup>
 
 </Project>
