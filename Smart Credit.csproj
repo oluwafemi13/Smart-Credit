@@ -13,7 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repository\" />
+    <Folder Include="Data\" />
+    <Folder Include="BusinessLogic\" />
+    <Folder Include="Entities\" />
   </ItemGroup>
 
 </Project>
