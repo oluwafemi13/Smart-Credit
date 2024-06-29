@@ -15,7 +15,7 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="BusinessLogic\" />
-    <Folder Include="Entities\" />
+    <Folder Include="Repository\" />
   </ItemGroup>
 
 </Project>
