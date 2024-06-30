@@ -9,7 +9,7 @@ namespace Smart_Credit.Data
         {
         }
 
-        public DbSet<DeadlineDate> DeadlineDates { get; set; }
+        public DbSet<Deadline> DeadlineDates { get; set; }
         
     }
 }

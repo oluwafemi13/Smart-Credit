@@ -1,8 +1,14 @@
-﻿namespace Smart_Credit.Entities;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Smart_Credit.Entities;
 
 public class Borrower
 {
 	public int Id { get; set; }	
-	public int AddressedId { get; set; }	
-	
+	public int AddresseeId { get; set; }
+    [ForeignKey("AddresseeId")]
+    public Addressee Addressee { get; set; }
+    public IEnumerable<LenderBorrower> LenderBorrower { get; set; }
+
 }

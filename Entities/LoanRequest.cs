@@ -9,5 +9,6 @@
         public decimal Amount { get; set; }
         public string Description { get; set; }
         public string Payday { get; set; }
+        public IEnumerable<LoanRequestLender> LoanRequestLender { get; set; }
     }
 }
