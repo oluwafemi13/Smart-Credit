@@ -1,10 +1,9 @@
-﻿namespace Smart_Credit.Entities
+﻿namespace smart_credit.Entities
 {
     public class Repayment
     {
-        public int RepaymentId { get; set; }
-        public int RepaymentDetails { get; set; }
-        public DateTime RepaymentDate { get; set; }
-        public float RepaymentAmount { get; set; }
+        public int Id { get; set; }
+        public DateTime Date { get; set; }
+        public decimal Amount { get; set; }
     }
-}
+}   
