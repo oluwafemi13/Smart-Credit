@@ -8,18 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="BusinessLogic\**" />
-    <Compile Remove="Entities\**" />
-    <Compile Remove="Repository\**" />
-    <Content Remove="BusinessLogic\**" />
-    <Content Remove="Entities\**" />
-    <Content Remove="Repository\**" />
-    <EmbeddedResource Remove="BusinessLogic\**" />
-    <EmbeddedResource Remove="Entities\**" />
-    <EmbeddedResource Remove="Repository\**" />
-    <None Remove="BusinessLogic\**" />
-    <None Remove="Entities\**" />
-    <None Remove="Repository\**" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.20" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.6.2" />
   </ItemGroup>
 
 </Project>

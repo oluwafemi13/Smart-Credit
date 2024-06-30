@@ -1,4 +1,7 @@
-﻿namespace Smart_Credit.Data
+﻿using Microsoft.EntityFrameworkCore;
+using Smart_Credit.Entities;
+
+namespace Smart_Credit.Data
 {
     public class ApplicationDbContext : DbContext   
     {

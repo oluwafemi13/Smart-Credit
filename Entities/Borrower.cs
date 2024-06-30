@@ -1,4 +1,4 @@
-﻿namespace Smart_Credit.Entities
+﻿namespace Smart_Credit.Entities;
 
 public class Borrower
 {
