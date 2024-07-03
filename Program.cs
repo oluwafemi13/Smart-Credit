@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using Smart_Credit.Data;
+
 namespace Smart_Credit
 {
     public class Program
@@ -13,6 +16,9 @@ namespace Smart_Credit
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
