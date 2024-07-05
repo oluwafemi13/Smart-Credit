@@ -6,12 +6,12 @@ namespace Smart_Credit.Entities
     {
         public int Id { get; set; }
         public DateTime LoanRequestDate { get; set; }
-        public int LenderId { get; set; }
-        [ForeignKey("LenderId")]
+        public int? LenderId { get; set; }
+       // [ForeignKey("LenderId")]
         public Lender Lender { get; set; }
         public float Amount { get; set; }
-        public int LoanRequestId { get; set; }
-        [ForeignKey("LoanRequestId")]
+        public int? LoanRequestId { get; set; }
+        //[ForeignKey("LoanRequestId")]
         public LoanRequest LoanRequest { get; set; }
         
 

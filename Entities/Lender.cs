@@ -6,10 +6,10 @@ namespace Smart_Credit.Entities
     {
         public int Id { get; set; }
         public string LenderName { get; set; }
-        public int AddresseeId { get; set; }
-        [ForeignKey("AddresseeId")]
+        public int? AddresseeId { get; set; }
+        //[ForeignKey("AddresseeId")]
         public Addressee Addressee { get; set; }
-        public IEnumerable<LoanRequestLender> LaonRequestLender { get; set; }
-        public IEnumerable<LenderBorrower> LenderBorrower { get; set; }
+        public IEnumerable<LoanRequestLender> LoanRequestLender { get; set; }
+       // public IEnumerable<LenderBorrower> LenderBorrower { get; set; }
     }
 }

@@ -6,15 +6,15 @@ namespace Smart_Credit.Entities
 {
     public class Intermediary
     {
-        [Key]
+       // [Key]
         public int Id { get; set; }
 
-        public int AddresseeId { get; set; }
-        [ForeignKey("AddresseeId")]
+        public int? AddresseeId { get; set; }
+        //[ForeignKey("AddresseeId")]
         public Addressee Addressee { get; set; }
-        [ForeignKey("Loan")]
-        public int LoanDate { get; set; }
-       // public int LoanId { get; set; }
+        //[ForeignKey("LoanId")]
+        public int? LoanDate { get; set; }
+        public int? LoanId { get; set; }
         public Loan Loan { get; set; }
     }
 } 
